@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Save";
+}
+<script src="~/Scripts/ckeditor/ckeditor.js"></script>
+<form method="post">
+    <p>
+        <textarea name="content"></textarea>
+    </p>
+    <p>
+        <input type="submit" value="提交" />
+    </p>
+</form>
+<script>
+    CKEDITOR.replace('content');
+</script>
+
